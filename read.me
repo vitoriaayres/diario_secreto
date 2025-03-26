@@ -1,0 +1,102 @@
+
+O Diário Secreto é um projeto de programação que simula um diário virtual onde os usuários podem armazenar mensagens, pensamentos ou segredos protegidos por senha. A aplicação permite:
+
+Criar mensagens privadas (texto, data, título).
+
+Proteger cada entrada com uma senha (ou uma senha mestra para acessar tudo).
+
+Visualizar, editar e excluir mensagens apenas após autenticação.
+
+É uma ótima forma de praticar JavaScript (front-end), Python (back-end ou criptografia), SQL (armazenamento) e HTML/CSS (interface).
+
+Tecnologias Utilizadas
+1. Front-End (HTML, CSS, JavaScript)
+HTML: Estrutura básica (formulários, botões, área de exibição).
+
+CSS: Design moderno e responsivo (cores suaves, animações ao abrir o diário).
+
+JavaScript:
+
+Validação de senhas.
+
+Criptografia simples no navegador (ex: Crypto API ou bcrypt.js).
+
+Mostrar/esconder mensagens conforme autenticação.
+
+2. Back-End (Python + SQL) (Opcional para versão avançada)
+Python (Flask/Django):
+
+Rota para salvar mensagens no banco de dados.
+
+Autenticação de senha antes de liberar conteúdo.
+
+SQL (SQLite/MySQL):
+
+Tabela Mensagens (id, titulo, conteudo, senha, data).
+
+Consultas para buscar mensagens apenas com a senha correta.
+
+3. Alternativa Simplificada (LocalStorage + JS Puro)
+Se for um projeto apenas front-end:
+
+Guardar mensagens no localStorage do navegador.
+
+Usar JavaScript para criptografia básica (ex: btoa() e atob() para codificar em Base64).
+
+Funcionalidades Principais
+✅ Criar nova entrada (título + mensagem + senha).
+✅ Listar mensagens salvas (sem mostrar conteúdo até autenticar).
+✅ Autenticação por senha (para ler, editar ou apagar).
+✅ Opção de senha única (uma senha para todas as mensagens) ou senhas individuais.
+✅ Responsivo (funciona bem em celulares e PCs).
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+The Secret Diary is a programming project that simulates a virtual journal where users can store private messages, thoughts, or secrets protected by passwords. The application allows:
+
+Creating private entries (text, date, title).
+
+Securing each entry with a password (or a master password for all entries).
+
+Viewing, editing, and deleting messages only after authentication.
+
+It’s a great way to practice JavaScript (front-end), Python (back-end/encryption), SQL (storage), and HTML/CSS (UI).
+
+Technologies Used
+1. Front-End (HTML, CSS, JavaScript)
+HTML: Basic structure (forms, buttons, display area).
+
+CSS: Modern, responsive design (soft colors, opening animations).
+
+JavaScript:
+
+Password validation.
+
+Simple in-browser encryption (e.g., Crypto API or bcrypt.js).
+
+Show/hide messages based on authentication.
+
+2. Back-End (Python + SQL) (Optional for advanced version)
+Python (Flask/Django):
+
+API routes to save messages in a database.
+
+Password authentication before revealing content.
+
+SQL (SQLite/MySQL):
+
+Messages table (id, title, content, password, date).
+
+Queries to fetch messages only with the correct password.
+
+3. Simplified Alternative (LocalStorage + Pure JS)
+For a front-end-only project:
+
+Store messages in the browser’s localStorage.
+
+Use basic encryption (e.g., btoa() and atob() for Base64 encoding).
+
+Key Features
+✅ Create new entries (title + message + password).
+✅ List saved messages (without showing content until unlocked).
+✅ Password authentication (to read, edit, or delete).
+✅ Single master password or per-entry passwords.
+✅ Fully responsive (works on mobile & desktop).

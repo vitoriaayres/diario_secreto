@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto do Diario Secreto</title>
+    <link rel="stylesheet" href="diario.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📖 Diário Secreto</h1>
+
+        <div class="opcoes">
+            <button onclick="mostrarForm('escrever')">Escrever Entrada</button>
+            <button onclick="mostrarForm('ler')">Ler Diário</button>
+        </div>
+
+        <div id="escrever-form" class="formulario">
+            <h2>Nova Entrada</h2>
+            <textarea id="entrada-texto" placeholder="Escreva aqui..."></textarea>
+            <button onclick="salvarEntrada()">Salvar</button>
+        </div>
+
+        <div id="ler-form" class="formulario" style="display: none;">
+            <h2>Digite a Senha</h2>
+            <input type="password" id="senha-input" placeholder="Senha">
+            <button onclick="lerDiario()">Acessar</button>
+            <div id="diario-container" class="entradas"></div>
+        </div>
+    </div>
+
+    <script src="diario.js"></script>
+</body>
+</html>
